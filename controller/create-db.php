@@ -1,8 +1,11 @@
 <?php
+	//take info from database.php in model folder to connect to database. __DIR__ creates path to directory.
 	require_once(__DIR__ . "/../model/database.php");
 
+	//makes connection to a new database. mysqli-object used to connect to the database.
 	$connection = new mysqli($host, $username, $password);
 
+	//checks if there is a connection error. kill program if error.
 	if($connection->connect_error){
 		die("Error: " . $connection->connect_error);
 	}
@@ -20,4 +23,5 @@
 			echo "Successfully created database " . $database;
 		}
 	}
+	//close the connection
 	$connection->close();
