@@ -27,5 +27,14 @@
 	else{
 		echo "Database already exists.";
 	}
+	//query will create a table. put info in that database(more specifically, the table)
+	//auto increments blogposts for us. maximum length of title is 255 characters. title and pot can't be null. 
+	//primary key-hooks both tables together.
+	//id is integer, title is string, post is text. none can be null.
+	$query = $connection->query("CREATE TABLE posts ("
+		  . "id int(11) NOT NULL AUTO_INCREMENT,"
+		  . "title varchar(255) NOT NULL,"
+		  . "post text NOT NULL,"
+		  . "PRIMARY KEY (id)");
 	//close the connection
 	$connection->close();
