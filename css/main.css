@@ -1,0 +1,188 @@
+body {
+    height: 1000px;
+    width: 100%;
+}
+#links{
+padding: 0px;
+margin: 0px;
+}
+#sociallink{
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+a:link {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+a:active {
+    text-decoration: underline;
+}
+.linkdiv{
+    color: white;
+    width: 80px;
+    padding: 0px 50px 0px 5px;
+    height: 20px;
+    margin: 0px 40px 0px 40px;
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+
+}
+
+
+#webnav{
+	height: 50px;
+    width: 1349px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+.webnav{
+    display: inline-block;
+    margin: 0px 50px 0px 50px;
+    text-align: center;
+    color: white;
+    height: 50px;
+    padding:0px 0px 0px 0px;
+
+}
+#headerdiv{
+    font-family: 'PT Sans Narrow', sans-serif;
+    height: 667px;
+    color: white;
+    font-size: 50px;
+    padding: 0px 0px 0px 0px;
+    background: url(bluewalls.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+}
+#orangeop{
+    width: 1349px;
+    background: rgba(200, 80, 0, 0.4); 
+    height: 450px;
+}
+#aboutme{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    height: 667px;
+    color: white;
+    width:1349px;
+    padding: 20px 0px 0px 0px;
+    background: url(dragon.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    text-align: center;
+}
+#blackop{
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    width: 1349px;
+    background: rgba(0, 0, 0, 0.4); 
+    height: 450px;
+    margin: 20px 0px 0px 0px;
+}
+#helloabout{
+    font-size: 60px;
+}
+#projects{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    height: 667px;
+    color: white;
+    width:1349px;
+    padding: 20px 0px 0px 0px;
+    background: url(swirl.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+}
+#whiteop{
+    background: url(insertimagehere.jpg) no-repeat center center fixed; 
+    width: 1349px;
+    background: rgba(400, 400, 400, 0.4); 
+    height: 450px;
+}
+#whitediv{
+    text-align: center;
+}
+#whiteopproj{
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+#proj{
+    font-size: 15px;
+}
+#project1{
+    background-color: black;
+    height: 200px;
+    width: 250px;
+    display: inline-block;
+    margin: 75px 75px 75px 140px;
+}
+#project2{
+    background-color: red;
+    height: 200px;
+    width: 250px;
+    display: inline-block;
+    margin: 75px;
+}
+#project3{
+    background-color: lime;
+    height: 200px;
+    width: 250px;
+    display: inline-block;
+    margin: 75px;
+}
+#h3head{
+    padding: 20px 0px 0px 0px;
+    width: 1349px;
+    margin: 0px 0px 0px 0px;
+    height: 70px;
+    text-align: center;
+    font-size: 70px
+}
+#h4head{
+    padding: 40px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    width: 1349px;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+#quote{
+    padding: 90px 0px 0px 0px;
+    width: 1349px;
+    text-align: center;
+    height: 0px;
+    font-size: 40px;
+}
+ul{
+    display: inline-block;
+}
+    @media screen and (max-width: 959px){
+    	#container{
+    		width: 100%;
+    	}
+    #headerdiv{
+    	width: 100%;
+    }
+}
