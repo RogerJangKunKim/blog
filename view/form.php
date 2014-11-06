@@ -9,4 +9,7 @@
 		<label for="post">Post: </label>
 		<textarea name="post"></textarea>
 	</div>
+	<!-- creates the submit button  -->
+		<button type="submit">Submit</button>
+	</div>
 </form>

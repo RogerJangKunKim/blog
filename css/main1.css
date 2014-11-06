@@ -1,3 +1,74 @@
 body{
 	background-color: black;
+	background-image: url(../img/darkwood.png);
+	color: white;
+	text-align: center;
+}
+.navbar{
+    color: white;
+    text-align: center;
+}
+.links{
+	background-color: white;
+}
+a:link {
+    text-decoration: none;
+    font-size: 70px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #285e8e;
+}
+
+a:active {
+    text-decoration: underline;
+}
+.pageulnav{
+	text-align: center;
+}
+.homenav{
+	display: inline-block;
+    text-align: center;
+}
+#homeul{
+	padding:10px 0px 0px 0px;
+}
+.modalnav{
+	text-align: center;
+	text-decoration: none;
+	list-style-type: none;
+	background-color: black;
+	border: 2px solid white;
+}
+.webpage{
+	background-color: black;
+	height: 100%;
+	color: white;
+	background: no-repeat center center fixed; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+@media (max-width: 320px) {
+	body {
+	}
+	h1{
+		margin: 10px;
+	}
+	p{
+		margin: 25px;
+	}
+}
+@media (max-width: 1024px) {
+	body {
+	}
 }
