@@ -6,10 +6,10 @@
 		<input type="text" name="title"/>
 	</div>
 	<!-- text area lets you inpur more text than label.  -->
-		<label for="post">Post: </label>
+		<p><label for="post">Post: </label>
 		<textarea name="post"></textarea>
 	</div>
 	<!-- creates the submit button  -->
-		<button type="submit">Submit</button>
+		<p><button type="submit">Submit</button>
 	</div>
 </form>
