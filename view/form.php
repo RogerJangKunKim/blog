@@ -1,6 +1,12 @@
-<h1>Create Blog Post</h1>
+<?php 
+// we now have access to the path variable. correct path to reach certain files/folders without difficulty.
+	require_once(__DIR__ . "/../model/config.php")
+?>
 
-<form>
+<h1>Create Blog Post</h1>
+<!-- using form to send info. telling to post info. controller will receive the info through INPUT_POST -->
+<!-- action will perform in the create-post file -->
+<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 	<!-- try to use the terms you used from your table. -->
 		<label for="title">Title: </label>
 		<input type="text" name="title"/>
