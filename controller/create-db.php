@@ -1,7 +1,7 @@
 <?php
 	//HTML tags can be used in php.
 	//take info from database.php in model folder to connect to database. __DIR__ creates path to directory.
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/config.php");
 
 	//makes connection to a new database. mysqli-object used to connect to the database.
 	$connection = new mysqli($host, $username, $password);

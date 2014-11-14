@@ -6,7 +6,7 @@
 	//need this require_once to make a cennection to database.php
 	//database.php has info for connecting to the actual database.
 	//used variables in database.php to make a new sqli
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/config.php");
 	// all 4 parameters are from database.php
 	$connection = new mysqli($host, $username, $password, $database);
 
