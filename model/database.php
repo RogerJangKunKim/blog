@@ -21,7 +21,12 @@
 		}
 		//these functions will eliminate a lot of repetition because we can use these functions to open/close a connection
 		public function openingConnection(){
+			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database)
 
+			//checks if there is a connection error. kill program if error.
+			if($this->connection->connect_error){
+				die("<p>Error: " . $this->connection->connect_error . "</p>");
+			}
 		}
 
 		public function closeConnection(){
