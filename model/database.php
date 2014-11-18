@@ -19,6 +19,7 @@
 			$this->password = $password;
 			$this->database = $database;
 		}
+		//functions can be repeated, they run when they are called.
 		//these functions will eliminate a lot of repetition because we can use these functions to open/close a connection
 		public function openingConnection(){
 			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database)
@@ -30,7 +31,10 @@
 		}
 
 		public function closeConnection(){
-
+			//isset checks if variable has something within the variable. if no info, will return null.
+			if (isset($this->connection)) {
+				$this->connection->close();
+			}
 		}
 
 		public function query($string){
