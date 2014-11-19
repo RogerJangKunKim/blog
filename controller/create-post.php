@@ -7,8 +7,6 @@
 	//database.php has info for connecting to the actual database.
 	//used variables in database.php to make a new sqli
 	require_once(__DIR__ . "/../model/config.php");
-	// all 4 parameters are from database.php
-	$connection = new mysqli($host, $username, $password, $database);
 
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
@@ -23,5 +21,3 @@
 	else{
 		echo "<p>connection->error</p>";
 	}
-
-	$connection->close();

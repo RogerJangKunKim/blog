@@ -6,3 +6,7 @@
 	$username = "root";
 	$password = "root";
 	$database = "blog_db";
+
+	//variable will have access to functions in Database.php
+	//contructor will use info from the 4 variables above and store it withing the variable.
+	$connection = new Database($host, $username, $password, $database);
