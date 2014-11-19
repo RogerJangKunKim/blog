@@ -19,7 +19,7 @@
 			$this->password = $password;
 			$this->database = $database;
 		}
-		//functions can be repeated, they run when they are called.
+		//functions are blocks of statements that can be repeated, but they will only run when they are called.
 		//these functions will eliminate a lot of repetition because we can use these functions to open/close a connection
 		public function openingConnection(){
 			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database)
@@ -36,8 +36,14 @@
 				$this->connection->close();
 			}
 		}
-
+		//data stored un $string, results stored in $query
 		public function query($string){
+			$this->openConnection();
 
+			$query = $this->connection->query($string);
+
+			$this->closeConnection();
+
+			return $query;
 		}
 	}

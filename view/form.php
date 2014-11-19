@@ -1,6 +1,8 @@
 <?php 
 // we now have access to the path variable. correct path to reach certain files/folders without difficulty.
 	require_once(__DIR__ . "/../model/config.php");
+
+	$date = new DateTime('today');
 ?>
 
 <h1>Create Blog Post</h1>
@@ -18,4 +20,5 @@
 	<!-- creates the submit button  -->
 		<p><button type="submit">Submit</button>
 	</div>
+		<p>The date is : <?php echo $date->format('m/d/Y') ?></p>
 </form>
