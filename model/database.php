@@ -8,6 +8,8 @@
 		private $username;
 		private $password;
 		private $database; //take info from create-db.php and stores them in this variable. used for easier maintainance and easier coding.
+		public $error; //must be public because we want to access it in create-db.php
+
 		//constructor will build an object
 		//variables used are global. but the variables inside are local.
 			
@@ -68,6 +70,10 @@
 
 			$query = $this->connection->query($string);
 
+			//checking if query is false. it will make it true.
+			if(!$query){
+				$this->error = $this->connection->error;
+			}
 
 			$this->closeConnection();
 
