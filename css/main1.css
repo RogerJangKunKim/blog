@@ -26,6 +26,12 @@ a:hover {
 a:active {
     text-decoration: underline;
 }
+#whiteop{
+	height: 100px;
+	background: rgba(400, 400, 400, 0.4); 
+    text-align: center;
+    border: 5px solid white;
+}
 .webpage{
 	background-color: black;
 	height: 100%;

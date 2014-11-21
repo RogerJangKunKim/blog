@@ -12,12 +12,12 @@
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 	//use query to store info.
 	// insert into out table posts. single quotes to make sure that what is being sent be converted to a string.
-	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
+	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post'");
 	//query will store a value.
 	// if not true, then it couldn't insert info into database. if true then info stored in $query
 	if($query){
 		echo "<p>Successfully inserted post: $title</p>";
 	}
 	else{
-		echo "<p>connection->error</p>";
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
