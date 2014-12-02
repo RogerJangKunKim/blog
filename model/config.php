@@ -14,7 +14,7 @@
 
 	//we want to check if $_SESSION is called session, and session variable called connection exists.
 	//checking if set or not. If set, then it will create the database object and  set it to session variable. we want to set it if it has not been set.
-	//only functions when database has not been set yet.
+	//only functions when database has not been set.
 	if(!isset($_SESSION["connection"])){
 		//variable will have access to functions in Database.php
 		//contructor will use info from the 4 variables above and store it withing the variable.
