@@ -2,7 +2,7 @@ body{
 	background-color: black;
 	background-image: url(../img/darkwood.png);
 	color: red;
-	text-align: center;
+	text-align: left;
 
 }
 ul{
@@ -10,7 +10,7 @@ ul{
 }
 a:link {
     text-decoration: none;
-    font-size: 70px;
+    font-size: 29px;
 }
 
 a:visited {
@@ -26,11 +26,42 @@ a:hover {
 a:active {
     text-decoration: underline;
 }
+#header{
+	width: 100%;
+	background-color: white;
+	height: 50px;
+	padding-top: 25px;
+	text-align: left; 
+	padding-left: 7px;
+	margin-bottom: 50px;
+}
+#BLOGPOST{
+	width: 70%;
+	display: inline-block;
+	text-align: center;
+	background-color: yellow;
+	margin-left: 2.3%;
+	height: 299px;
+}
+#aside{
+	text-align: center;
+	width: 25%;
+	display: inline-block;
+	background-color: green;
+	height: 300px;
+	font-size: 30px;
+}
 #whiteop{
 	height: 100px;
 	background: rgba(400, 400, 400, 0.4); 
     text-align: center;
     border: 5px solid white;
+}
+.link{
+	background-color: lime;
+	padding-left: 13px;
+	width: 33%;
+	display: inline-block;
 }
 .webpage{
 	background-color: black;

@@ -1,3 +1,17 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main1.css">
+</head>
+<body>
+	<div>
+		
+	</div>
+</body>
+</html>
+
 <!-- recieves info that was sent from submit -->
 <!-- POST is different from the other post we use through out our website. We want to get info that was posted. -->
 <!-- filters so that there won't be malicious things. isn't the only mechanism we can use and it is not 100% secure -->
@@ -8,6 +22,8 @@
 	//used variables in database.php to make a new sqli
 	require_once(__DIR__ . "/../model/config.php");
 
+	$date = new DateTime('today');
+
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 	//use query to store info.
@@ -16,8 +32,13 @@
 	//query will store a value.
 	// if not true, then it couldn't insert info into database. if true then info stored in $query
 	if($query){
-		echo "<p>Successfully inserted post: $title</p>";
+		echo "<p><h1>$title</h1></p>" . "<p>$post</p>";
 	}
+
 	else{
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
+	?>
+<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
+	<p>Date : <?php echo $date->format('m/d/Y') ?></p>
+</form>

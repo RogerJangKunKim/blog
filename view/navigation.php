@@ -3,7 +3,7 @@
 	require_once(__DIR__ . "/../model/config.php");
 ?>
 
-<nav>
+<nav id="BLOGPOST">
 	<ul>
 		<li> <!--$path is created in config. path can be accessed from the config.php file by the require_once at the top of this file 
 		$path links all project files together for easier access.
@@ -13,3 +13,6 @@
 		</li>
 	</ul>
 </nav>	
+<div id="aside">
+	NHIEOAJ:F
+</div>
