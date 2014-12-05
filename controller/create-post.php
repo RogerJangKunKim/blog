@@ -23,6 +23,7 @@
 	require_once(__DIR__ . "/../model/config.php");
 
 	$date = new DateTime('today');
+	$time = new DateTime('America/Los_Angeles');
 
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
@@ -33,6 +34,8 @@
 	// if not true, then it couldn't insert info into database. if true then info stored in $query
 	if($query){
 		echo "<p><h1>$title</h1></p>" . "<p>$post</p>";
+		// shows the date and time of the post.
+		echo "Posted on: " . $date->format("m/d/y") . " at " . $time->format("G;i");
 	}
 
 	else{
@@ -40,5 +43,4 @@
 	}
 	?>
 <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
-	<p>Date : <?php echo $date->format('m/d/Y') ?></p>
 </form>
