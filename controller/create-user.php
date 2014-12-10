@@ -5,10 +5,24 @@
 	$username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
-	//displays the email, username, and password you have inputted.
-	echo $password;
-
 	// used to encrypt the password so people won't be able to identify the password.
 	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
 
-	echo $salt;
+	// telling it to use $password and $salt use together to make an encrypted password, will give a unique encrypted password.
+
+	$hashedPassword = crypt($password, $salt);
+
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET "
+		. "email = '$email',"
+		. "username = '$username',"
+		. "password = '$hashedPassword',"
+		. "salt = '$salt'");
+
+	// will echo if created user.
+	if($query){
+		echo "Successfully created user: $username";
+	}
+	// will echo if not successful
+	else{
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}
