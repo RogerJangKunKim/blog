@@ -10,7 +10,9 @@ $query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE 
 if($query->num_rows==1){
 	$rows = $query->fetch_array();
 	// case sensitive.
+	//checks if hashed password=new hashed password
 	if($row["password"] === crypt($password, $row["salt"])){
+		$_SESSION["authenticated"] = true;
 		echo "<p>Login Successful</p>";
 	}
 	else{
@@ -20,5 +22,3 @@ if($query->num_rows==1){
 else{
 	echo "<p>Invalid Username and Password</p>";
 }
-
-//checks if hashed password=new hashed password

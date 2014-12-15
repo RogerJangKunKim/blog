@@ -3,6 +3,8 @@
 require_once(__DIR__ . "/Database.php");
 
 session_start();
+//will regenerate new id and delete the old one. prevents getting hacked.
+session_regenerate_id(true);
 
 $path = "/blog/";
 //code refactoring helps with code maintainance, editing, and using. impove how the code looks.
