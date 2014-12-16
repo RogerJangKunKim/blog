@@ -19,10 +19,12 @@ $query = $_SESSION["connection"]->query("INSERT INTO users SET "
 // will echo if created user.
 if($query){
 	echo "Successfully created user: $username";
+	echo "<li><a href=" . "$path" . "view/login-form.php" . ">Login</li>";
 }
 // will echo if not successful
 else{
 	echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	echo "<li><a href=" . "$path" . "view/register-form.php" . ">Try Again</li>";
 }
 
 ?>

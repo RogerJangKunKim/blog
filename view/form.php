@@ -1,7 +1,7 @@
 <?php 
 // we now have access to the path variable. correct path to reach certain files/folders without difficulty.
 require_once(__DIR__ . "/../model/config.php");
-require_once(__DIR__ . "/../controller/login-verify.php")
+require_once(__DIR__ . "/../controller/login-verify.php");
 
 if (!authenticateUser()) {
 	header("Location: " . $path . "index.php");

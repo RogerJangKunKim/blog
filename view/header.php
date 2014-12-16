@@ -11,12 +11,12 @@
 <body>
 	<div id="header">
 		<div class="link">
-			HEIOADKF
+			<a href="view/login-form.php">Login</a>
 		</div>
 		<div class="link">
-			HEIOADKF
+			<a href="view/form.php">Create Post</a>
 		</div>
 		<div class="link">
-			HEIOADKF
+			<a href="view/register-form.php">Register</a>
 		</div>
 	</div>
