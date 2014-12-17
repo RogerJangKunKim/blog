@@ -41,6 +41,7 @@ if($query){
 else{
 	echo "<p>" . $_SESSION["connection"]->error . "</p>";
 }
+echo "<li><a href=" . "$path" . "index.php" . ">Home</li>";
 ?>
 <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 </form>

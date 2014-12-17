@@ -1,6 +1,7 @@
 <?php
 require_once(__DIR__ . "/../model/config.php");
 
+
 $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
 $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
 $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
@@ -19,7 +20,7 @@ $query = $_SESSION["connection"]->query("INSERT INTO users SET "
 // will echo if created user.
 if($query){
 	echo "Successfully created user: $username";
-	echo "<li><a href=" . "$path" . "view/login-form.php" . ">Login</li>";
+	echo "<li><a href=" . "$path" . "login.php" . ">Login</li>";
 }
 // will echo if not successful
 else{

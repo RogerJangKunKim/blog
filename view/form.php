@@ -3,10 +3,10 @@
 require_once(__DIR__ . "/../model/config.php");
 require_once(__DIR__ . "/../controller/login-verify.php");
 
-if (!authenticateUser()) {
+/*if (!authenticateUser()) {
 	header("Location: " . $path . "index.php");
 	die();
-}
+}*/
 
 $date = new DateTime('today');
 ?>
@@ -27,4 +27,5 @@ $date = new DateTime('today');
 		<p><button type="submit">Submit</button>
 	</div>
 		<p>The date is : <?php echo $date->format('m/d/Y') ?></p>
+		
 </form>

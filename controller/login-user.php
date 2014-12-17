@@ -17,8 +17,10 @@ $rows = $query->fetch_array();
 	}
 	else{
 		echo "<p>Invalid Username and Password</p>";
+		echo "<li><a href=" . "$path" . "login.php" . ">Try Again</li>";
 	}
 }
 else{
 	echo "<p>Invalid Username and Password</p>";
+	echo "<li><a href=" . "$path" . "login.php" . ">Try Again</li>";
 }

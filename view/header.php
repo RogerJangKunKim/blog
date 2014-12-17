@@ -11,12 +11,15 @@
 <body>
 	<div id="header">
 		<div class="link">
-			<a href="view/login-form.php">Login</a>
+			<a href="login.php">Login</a>
 		</div>
 		<div class="link">
-			<a href="view/form.php">Create Post</a>
+			<a href="post.php">Create Post</a>
 		</div>
 		<div class="link">
-			<a href="view/register-form.php">Register</a>
+			<a href="register.php">Register</a>
+		</div>
+		<div class="link">
+			<a href="index.php">Home</a>
 		</div>
 	</div>
