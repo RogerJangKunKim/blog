@@ -1,7 +1,8 @@
-<?php //corrected path to post.php removed the error of object not found when clicking the href link.
-//only need contents in config in order to change an image.
-require_once(__DIR__ . "/../model/config.php");
-require_once(__DIR__ . "/../controller/login-verify.php");
+<?php 
+	//corrected path to post.php removed the error of object not found when clicking the href link.
+	//only need contents in config in order to change an image.
+	require_once(__DIR__ . "/../model/config.php");
+	require_once(__DIR__ . "/../controller/login-verify.php");
 
 ?>
 
