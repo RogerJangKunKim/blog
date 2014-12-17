@@ -6,7 +6,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: 100%;
-	color: white;
+	color: black;
 	text-align: left;
 	position: relative;
 
@@ -29,7 +29,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:hover {
@@ -42,27 +42,33 @@ a:active {
 }
 .link{
 	text-align: center;
-	background-image: url(../img/darkwood.png);
-	background: url(../img/darkwood.png) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: 100%;
 
 }
 .post{
-	background-color: black;
-	border: 2px solid white;
+	background-color: white;
+	border: 2px solid black;
 	padding: 10px;
 	text-align: center;
 	word-wrap: break-word;
 	margin-bottom: 10px;
 }
+#register{
+	background-color: white;
+	padding: 10px;
+}
+#login{
+	background-color: white;
+	padding: 10px;
+}
+#form{
+	background-color: white;
+	padding: 10px;
+}
 #header{
 	width: 100%;
 	background-color: white;
 	height: 50px;
-	padding-top: 5px;
+	padding-top: 3px;
 	text-align: left; 
 	padding-left: 7px;
 	margin-bottom: 50px;
@@ -90,7 +96,8 @@ a:active {
     border: 5px solid white;
 }
 .link{
-	background-color: lime;
+	background-color: white;
+	border: 2px solid black;
 	padding-left: 13px;
 	margin-left: 7px;
 	width: 24%;

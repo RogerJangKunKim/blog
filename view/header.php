@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main1.css">
 	</head>
 <body>
-	<div id="header">
+	<div id="header" class="background">
 		<div class="link">
 			<a href="login.php">Login</a>
 		</div>
