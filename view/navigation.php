@@ -6,25 +6,23 @@
 
 ?>
 
-<nav id="BLOGPOST">
+<nav class="post" id="BLOGPOST">
 	<ul>
 		<li> <!--$path is created in config. path can be accessed from the config.php file by the require_once at the top of this file 
 		$path links all project files together for easier access.
 		php code echos the $path and the string.
 		--><?php
-			if(!authenticateUser()){
-				echo "<li><a href=" . "$path" . "form.php" . ">Blog Post Form</li>";
-			}
-			if(!authenticateUser()){
-				echo "<li><a href=" . "$path" . "logout-user.php" . ">Logout</li>";
-			}
+			if(authenticateUser()){
 
+			}
+			else{
+
+			}
 
 			?>
-			<a href="<?php echo $path . "post.php" ?> ">Blog Post Form</a>
+			<h1 class="whitefont">Welcome to This Blog</h1>
+			<a class="link" href="controller/logout-user.php">Logout</a>
+			<a class="link" href="post.php">Create Post</a>
 		</li>
 	</ul>
 </nav>	
-<div id="aside">
-	NHIEOAJ:F
-</div>

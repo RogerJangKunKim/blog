@@ -14,9 +14,6 @@
 			<a href="login.php">Login</a>
 		</div>
 		<div class="link">
-			<a href="post.php">Create Post</a>
-		</div>
-		<div class="link">
 			<a href="register.php">Register</a>
 		</div>
 		<div class="link">

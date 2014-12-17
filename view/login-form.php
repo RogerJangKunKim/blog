@@ -7,15 +7,15 @@
 
 	<form method="post" action="<?php echo $path . "controller/login-user.php"?>">
 
-		<div class="whitefont">
-			<label for="username">Username: </label>
-			<input type="text" name="username" />
+		<div>
+			<label class="whitefont" for="username">Username: </label>
+			<input type="text" name="username" placeholder ="Username"/>
 		</div>
 
-		<div class="whitefont">
-			<label for="password">Password: </label>
+		<div>
+			<label class="whitefont" for="password">Password: </label>
 			<!-- input type is password because we don't want the user to see what they are typing, so it will appear as bullet points -->
-			<input type="password" name="password" />
+			<input type="password" name="password" placeholder="Password"/>
 		</div>
 
 		<div>
