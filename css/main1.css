@@ -55,14 +55,17 @@ a:active {
 #register{
 	background-color: white;
 	padding: 10px;
+	height: 400px;
 }
 #login{
 	background-color: white;
 	padding: 10px;
+	height: 400px;
 }
 #form{
 	background-color: white;
 	padding: 10px;
+	height: 400px;
 }
 #header{
 	width: 100%;
