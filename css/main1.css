@@ -29,7 +29,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover {
@@ -113,6 +113,8 @@ a:active {
 	margin-left: 7px;
 	width: 24%;
 	display: inline-block;
+	background: rgba(200, 80, 0, 0.4); 
+	color: white;
 }
 .webpage{
 	background-color: black;
