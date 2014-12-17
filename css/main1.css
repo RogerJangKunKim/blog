@@ -45,12 +45,14 @@ a:active {
 
 }
 .post{
+	color: white;
 	background-color: white;
 	border: 2px solid black;
 	padding: 10px;
 	text-align: center;
 	word-wrap: break-word;
 	margin-bottom: 10px;
+	background: rgba(200, 80, 0, 0.4); 
 }
 #register{
 	background-color: white;
